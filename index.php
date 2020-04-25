@@ -286,7 +286,7 @@ if(empty($_POST['agreed']))
     // Генерируем уникальный логин и пароль.
     // TODO: сделать механизм генерации, например функциями rand(), uniquid(), md5(), substr().
     $login = randomString(10);
-    $pass = randomString(32);
+    $pass = randomString(8);
     // Сохраняем в Cookies.
     setcookie('login', $login);
     setcookie('pass', $pass);
